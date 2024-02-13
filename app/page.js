@@ -1,7 +1,11 @@
+import { Achievement } from "@/components/achievement";
 import { Facilities } from "@/components/card-facilities";
 import { CarouselCustomNavigation } from "@/components/carousel-image-slide";
+import { Career } from "@/components/carrer";
 import CompanyLogos from "@/components/companies-logos";
+import { Contact } from "@/components/contact";
 import MissionVisionCard from "@/components/mission-vision";
+import { Partnership } from "@/components/partnership";
 import { CeoQuote } from "@/components/quote-ceo";
 import {
   RevealFromBottom,
@@ -25,6 +29,10 @@ export default function Home() {
       </div> */}
       <Facilities />
       <MissionVisionCard />
+      <Career />
+      <Achievement />
+      <Partnership />
+      <Contact />
     </main>
   );
 }

@@ -30,7 +30,7 @@ function NavList() {
         <Link
           key={link.key}
           href={link.href}
-          className="font-semibold p-1 underline underline-offset-4  flexCenter cursor-pointer pb-1.5 text-blue-600 hover:text-gray-50 transition-all hover:font-bold"
+          className="font-semibold p-1  underline-offset-4  flexCenter cursor-pointer pb-1.5 text-[#0F79B9] hover:text-gray-50 transition-all hover:font-bold hover:text-[18px]"
         >
           {link.label}
         </Link>
@@ -41,12 +41,12 @@ function NavList() {
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
   return (
-    <nav className="max-container padding-container max-w-screen-xl px-6  ">
+    <nav className="max-container padding-container max-w-screen-xl px-6 ">
       <div className="flexBetween  relative z-30 ">
         <Link href="/">
           <Image
             className="object-cover lg:w-64 w-36"
-            src="/assets/icons/final_logo.png"
+            src="/atc.svg"
             alt="logo"
             width={1000}
             height={1000}

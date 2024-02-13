@@ -23,10 +23,8 @@ export function FacilitiesCard({ src, title, description, list }) {
         <SectionIcon className="w-[60px] h-[60px]" type={title} />
       </div>
       {/* Title and Description */}
-      <div className="p-3 space-y-4 pb-6 md:h-44 ">
-        <h2 className="text-4xl  text-center font-bold underline underline-offset-8  p-2">
-          {title}
-        </h2>
+      <div className="p-3 space-y-4 md:pb-6 md:h-44 ">
+        <h2 className="text-4xl  text-center font-bold  p-2">{title}</h2>
         <p className="regular-14 text-justify tracking-tight xl:regular-16 text-thin opacity-90 ">
           {description}
         </p>
@@ -34,7 +32,10 @@ export function FacilitiesCard({ src, title, description, list }) {
       <div className="p-2 pt-10 ">
         <ul className="space-y-1">
           {list.map((text, idx) => (
-            <li className="bold-16 flex  space-x-2 space-y-2 items-center" key={idx}>
+            <li
+              className="bold-16 flex  space-x-2 space-y-2 items-center"
+              key={idx}
+            >
               <IconTickCircle className="w-4 h-4 text-blue-900 mt-2  " />
               <p>{text}</p>
             </li>

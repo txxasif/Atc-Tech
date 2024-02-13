@@ -6,7 +6,7 @@ export default function MissionVisionCard() {
       {mission_vision.map((item) => {
         return (
           <div className=" px-3 py-4 space-y-3 pl-4  ">
-            <h1 className=" bold-40 text-center underline underline-offset-8">{item.title}</h1>
+            <h1 className=" bold-40 text-center ">{item.title}</h1>
             <p className="text-justify font-light leading-relaxed p-4">
               {item.description}
             </p>

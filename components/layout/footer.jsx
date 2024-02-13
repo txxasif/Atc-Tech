@@ -5,22 +5,22 @@ import { footerContactInfo, footerLinks, socials } from "@/constants/constants";
 
 const Footer = () => {
   return (
-    <footer className="flexCenter mb-24 mt-6">
-      <div className="padding-container max-container flex w-full flex-col gap-14">
+    <footer className="flexCenter  mt-20  text-white bg-[#001C38] py-5">
+      <div className="padding-container max-container flex w-full flex-col gap-8">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
             <Image
-              src="/assets/images/hilink-logo.svg"
+              className="object-cover lg:w-64 w-36"
+              src="/atc.svg"
               alt="logo"
-              width={74}
-              height={29}
+              width={1000}
+              height={1000}
             />
           </Link>
-
           <div className="flex flex-wrap gap-10 sm:justify-between md:flex-1">
             {footerLinks.map((column) => (
               <FooterColumn key={column.title} title={column.title}>
-                <ul className="regular-14 flex flex-col gap-4 text-gray-20">
+                <ul className="regular-14 flex flex-col gap-4">
                   {column.links.map((link) => (
                     <Link href="/" key={link}>
                       {link}
@@ -29,7 +29,6 @@ const Footer = () => {
                 </ul>
               </FooterColumn>
             ))}
-
             <div className="flex flex-col gap-5">
               <FooterColumn title={footerContactInfo.title}>
                 {footerContactInfo.links.map((link) => (
@@ -39,20 +38,23 @@ const Footer = () => {
                     className="flex gap-4 md:flex-col lg:flex-row"
                   >
                     <p className="whitespace-nowrap">{link.label}:</p>
-                    <p className="medium-14 whitespace-nowrap text-blue-70">
-                      {link.value}
-                    </p>
+                    <p className="medium-14 whitespace-nowrap ">{link.value}</p>
                   </Link>
                 ))}
               </FooterColumn>
             </div>
-
             <div className="flex flex-col gap-5">
               <FooterColumn title={socials.title}>
-                <ul className="regular-14 flex gap-4 text-gray-30">
+                <ul className="regular-14 flex gap-4">
                   {socials.links.map((link) => (
                     <Link href="/" key={link}>
-                      <Image src={link} alt="logo" width={24} height={24} />
+                      <Image
+                        className="t"
+                        src={link}
+                        alt="logo"
+                        width={24}
+                        height={24}
+                      />
                     </Link>
                   ))}
                 </ul>
@@ -61,9 +63,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border bg-gray-20" />
-        <p className="regular-14 w-full text-center text-gray-30">
-          2023 &copy; Hilink | All rights reserved
+        <div className="border w-full" />
+        <p className="regular-14 w-full text-center pb-5">
+          &copy; ATC Tech Limited | All rights reserved 2024
         </p>
       </div>
     </footer>

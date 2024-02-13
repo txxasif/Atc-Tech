@@ -50,7 +50,7 @@ export const footerLinks = [
   {
     title: "Learn More",
     links: [
-      "About Hilink",
+      "About ATC",
       "Press Releases",
       "Environment",
       "Jobs",
@@ -58,17 +58,13 @@ export const footerLinks = [
       "Contact Us",
     ],
   },
-  {
-    title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
-  },
 ];
 
 export const footerContactInfo = {
   title: "Contact Us",
   links: [
-    { label: "Admin Officer", value: "123-456-7890" },
-    { label: "Email Officer", value: "hilink@akinthil.com" },
+    { label: "Admin Officer", value: "+8802 9562844" },
+    { label: "Email Officer", value: "atctechltdbd@gmail.com" },
   ],
 };
 
