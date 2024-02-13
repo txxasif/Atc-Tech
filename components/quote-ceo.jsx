@@ -4,10 +4,10 @@ import { Reveal, RevealFromLeft, RevealFromRight } from "./shared/reveal";
 export function CeoQuote() {
   return (
     <RevealFromRight>
-      <div className="border max-container  px-12 py-8 shadow-2xl rounded-lg bg-green-50">
+      <div className=" md:max-container  md:px-12 md:py-8 pt-8 px-2 text-justify mb-4 md:mb-0  ">
         <blockquote className="relative ">
           <svg
-            className=" absolute -top-6 -start-8 h-16 w-16  text-gray-700"
+            className=" absolute -top-6 -start-8 h-16 w-16  text-gray-10"
             width="16"
             height="16"
             viewBox="0 0 16 16"
@@ -20,8 +20,8 @@ export function CeoQuote() {
               fill="currentColor"
             />
           </svg>
-          <div className="relative z-10">
-            <p className="bold-16 sm:regular-20 text-white">
+          <div className="relative w-full ">
+            <p className="w-full md:bold-16 md:regular-20  ">
               <em>
                 Building on five years of successful software development, ATC
                 confidently approaches future needs. Our highly skilled
@@ -36,11 +36,11 @@ export function CeoQuote() {
 
           <footer className="mt-6">
             <div className="flex items-center">
-              <div className="ms-4">
-                <div className="text-base font-semibold text-gray-800 dark:text-gray-400">
+              <div className="md:ms-4">
+                <div className="text-2xl font-semibold text-gray-800 dark:text-gray-400">
                   Dr. Atikur Rahman
                 </div>
-                <div className="text-xs text-gray-500">Source title</div>
+                <div className="text-lg text-gray-500">CEO</div>
               </div>
             </div>
           </footer>

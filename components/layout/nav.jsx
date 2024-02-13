@@ -14,7 +14,7 @@ function NavListLMobile() {
         <Link
           key={link.key}
           href={link.href}
-          className="regular-16  flexCenter cursor-pointer pb-1.5 text-green-50 hover:text-gray-50 transition-all hover:font-bold"
+          className="regular-16  flexCenter cursor-pointer pb-1.5 text-blue-600 hover:text-gray-50 transition-all hover:font-bold"
         >
           {link.label}
         </Link>
@@ -30,7 +30,7 @@ function NavList() {
         <Link
           key={link.key}
           href={link.href}
-          className="font-semibold p-1 underline underline-offset-4  flexCenter cursor-pointer pb-1.5 text-green-50 hover:text-gray-50 transition-all hover:font-bold"
+          className="font-semibold p-1 underline underline-offset-4  flexCenter cursor-pointer pb-1.5 text-blue-600 hover:text-gray-50 transition-all hover:font-bold"
         >
           {link.label}
         </Link>
@@ -45,11 +45,11 @@ const Navbar = () => {
       <div className="flexBetween  relative z-30 ">
         <Link href="/">
           <Image
-            className="object-cover w-36"
-            src="/atc-logo.png"
+            className="object-cover lg:w-64 w-36"
+            src="/assets/icons/final_logo.png"
             alt="logo"
-            width={74}
-            height={29}
+            width={1000}
+            height={1000}
           />
         </Link>
         <NavList />

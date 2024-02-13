@@ -25,6 +25,7 @@ module.exports = withMT({
           30: "#7B7B7B",
           50: "#585858",
           90: "#141414",
+          100: "#F3F0CA",
         },
         orange: {
           50: "#FF814C",
