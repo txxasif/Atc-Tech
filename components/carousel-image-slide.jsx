@@ -7,7 +7,7 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-const data = ["/pic1.jpg", "/pic2.jpg", "/pic3.jpg", "/pic4.jpg"];
+const data = ["/helvi.png", "/pic1.jpg", "/pic2.jpg", "/pic3.jpg", "/pic4.jpg"];
 import Autoplay from "embla-carousel-autoplay";
 export function CarouselCustomNavigation() {
   return (
@@ -23,7 +23,10 @@ export function CarouselCustomNavigation() {
         <CarouselContent className="">
           {data.map((src, idx) => {
             return (
-              <CarouselItem key={idx} className="relative w-full">
+              <CarouselItem
+                key={idx}
+                className="relative w-full overflow-hidden"
+              >
                 <Image
                   width={900}
                   height={500}
