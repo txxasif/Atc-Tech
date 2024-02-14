@@ -47,7 +47,7 @@ export function CeoQuote() {
             Dr. Mohammad Atikur Rahman
           </cite>
           <cite className="ps-3 text-sm text-gray-500 dark:text-gray-400">
-            MD & CEO at ATC
+            MD & CEO at ATC Tech Limited
           </cite>
         </div>
       </figcaption>
