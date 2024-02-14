@@ -23,7 +23,7 @@ export function CarouselCustomNavigation() {
         <CarouselContent className="">
           {data.map((src, idx) => {
             return (
-              <CarouselItem className="relative w-full">
+              <CarouselItem key={idx} className="relative w-full">
                 <Image
                   width={900}
                   height={500}

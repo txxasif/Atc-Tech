@@ -31,8 +31,8 @@ export default function Home() {
       <MissionVisionCard />
       <Career />
       <Achievement />
-      <Partnership />
-      <Contact />
+      {/* <Partnership /> */}
+      {/* <Contact /> */}
     </main>
   );
 }

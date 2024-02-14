@@ -1,7 +1,7 @@
 export const navLinks = [
   { href: "/", key: "home", label: "Current Openings" },
   { href: "/", key: "how_hilink_work", label: "Departments" },
-  { href: "/", key: "services", label: "About Use" },
+  { href: "/", key: "services", label: "About Us" },
   { href: "/", key: "contact_us", label: "Contact Us" },
 ];
 
@@ -62,10 +62,7 @@ export const footerLinks = [
 
 export const footerContactInfo = {
   title: "Contact Us",
-  links: [
-    { label: "Admin Officer", value: "+8802 9562844" },
-    { label: "Email Officer", value: "atctechltdbd@gmail.com" },
-  ],
+  links: [{ label: "Email Officer", value: "atctechltdbd@gmail.com" }],
 };
 
 export const socials = {

@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { footerContactInfo, footerLinks, socials } from "@/constants/constants";
+import { IconFacebook, IconLinkedinCircled, IconYoutube } from "@/icons/icons";
 
 const Footer = () => {
   return (
@@ -11,7 +12,7 @@ const Footer = () => {
           <Link href="/" className="mb-10">
             <Image
               className="object-cover lg:w-64 w-36"
-              src="/atc.svg"
+              src="/atc_white.svg"
               alt="logo"
               width={1000}
               height={1000}
@@ -46,7 +47,10 @@ const Footer = () => {
             <div className="flex flex-col gap-5">
               <FooterColumn title={socials.title}>
                 <ul className="regular-14 flex gap-4">
-                  {socials.links.map((link) => (
+                  <IconFacebook className="w-8 h-8" />
+                  <IconLinkedinCircled className="w-8 h-8" />
+                  <IconYoutube className="w-8 h-8" />
+                  {/* {socials.links.map((link) => (
                     <Link href="/" key={link}>
                       <Image
                         className="t"
@@ -56,7 +60,7 @@ const Footer = () => {
                         height={24}
                       />
                     </Link>
-                  ))}
+                  ))} */}
                 </ul>
               </FooterColumn>
             </div>

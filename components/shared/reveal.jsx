@@ -91,7 +91,7 @@ export function RevealPopUp({ children, width = "fit-content" }) {
   }, [inView]);
 
   return (
-    <div ref={ref} className="overflow-hidden relative w-full ">
+    <div ref={ref} className=" relative w-full ">
       <motion.div
         variants={{
           hidden: { opacity: 0, scale: 0.5 },
