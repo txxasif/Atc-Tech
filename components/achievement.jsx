@@ -1,55 +1,65 @@
-const data = [];
+import { IconClients, IconGlobe, IconIndustry, IconUserSettingsLine } from "@/icons/icons";
+
+const data = [{
+  text: "Client Management Software",
+  count: 150
+}, {
+  text: "ERP Solutions",
+  count: 200
+}, {
+  text: "Clients",
+  count: 400,
+
+}, {
+  text: "Countries",
+  count: 3
+}];
+function AchievementIcon({ index, className }) {
+  if (index == 0) {
+    return <IconUserSettingsLine className={className} />
+  } else if (index == 1) {
+    return <IconIndustry className={className} />
+
+  } else if (index == 2) {
+    return <IconClients className={className} />
+  } else {
+    return <IconGlobe className={className} />
+  }
+}
+function AchievementCard({ text, count, index }) {
+  return <div className="border rounded w-full p-8 ">
+
+    <div className=" flex justify-between md:justify-center items-center gap-4
+    ">
+      <div>
+        <span className="text-3xl "><AchievementIcon index={index} className="w-20 h-20 text-white bg-[#0F79B9] p-4 rounded-lg " /></span>
+      </div>
+      <div className="text-center ">
+        <h1 className="font-bold text-4xl text-end lg:text-center">{count}+</h1>
+        <h1 className="font-light text-end lg:text-center "> {text}</h1>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+}
 
 export function Achievement() {
   return (
-    <section className="w-full py-16">
-      <h1 className="text-center text-black bold-40">Achievement</h1>
-      <div className="bg-white ">
-        <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-2xl lg:max-w-none">
-            <dl className="mt-16 grid grid-cols-1 gap-0.5 overflow-hidden rounded-2xl text-center sm:grid-cols-2 lg:grid-cols-4">
-              <div className="flex flex-col bg-gray-200/50 p-8">
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  150+
-                </dd>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  Client Management Software
-                </dd>
-              </div>
-              <div className="flex flex-col bg-gray-200/50 p-8">
-                {/* <dt className="text-sm font-semibold leading-6 text-gray-600">
-                  200+ ERP Solutions
-                </dt> */}
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  200+
-                </dd>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  ERP Solutions
-                </dd>
-              </div>
-              <div className="flex flex-col bg-gray-200/50 p-8">
-                {/* <dt className="text-sm font-semibold leading-6 text-gray-600">
-                  400+ Clients
-                </dt> */}
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  400+
-                </dd>
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  Clients
-                </dd>
-              </div>
-              <div className="flex flex-col bg-gray-200/50 p-8">
-                {/* <dt className="text-sm font-semibold leading-6 text-gray-600">
-                  3 Countries
-                </dt> */}
-                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900">
-                  3 Countries
-                </dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
+    <section>
+      <h1 className="bold-40 text-center pt-16 pb-14 lg:pb-0" >Achievement</h1>
+      <section className="w-full   md:py-8 gap-2  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+        {
+          data.map((item, idx) => {
+            return <AchievementCard key={idx} count={item.count} text={item.text} index={idx} />
+          })
+        }
+      </ section>
     </section>
+
   );
 }

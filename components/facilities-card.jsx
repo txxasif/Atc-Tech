@@ -36,10 +36,10 @@ export function FacilitiesCard({ src, title, description, list }) {
       initial="hidden"
       animate={mainControls}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className="border p-2  rounded-lg   shadow-2xl pb-3"
+      className="border p-2  rounded-lg   shadow-md pb-3"
     >
       <div className="flex justify-center pt-6">
-        <SectionIcon className="w-[60px] h-[60px]" type={title} />
+        <SectionIcon className=" w-20 h-20 text-white bg-[#0F79B9] p-4 rounded-lg " type={title} />
       </div>
       {/* Title and Description */}
       <div className="p-3 space-y-4 md:pb-6 md:h-44 ">
@@ -48,14 +48,14 @@ export function FacilitiesCard({ src, title, description, list }) {
           {description}
         </p>
       </div>
-      <div className="p-2 pt-10 ">
-        <ul className="space-y-1">
+      <div className="px-4 pt-4  ">
+        <ul className="space-y-1 pb-2">
           {list.map((text, idx) => (
             <li
-              className="bold-16 flex  space-x-2 space-y-2 items-center"
+              className=" font-medium opacity-80 flex   space-x-2 space-y-2 items-center"
               key={idx}
             >
-              <IconTickCircle className="w-4 h-4 text-blue-900 mt-2  " />
+              <IconTickCircle className="w-4 h-4 text-[#0F79B9] mt-2  " />
               <p>{text}</p>
             </li>
           ))}

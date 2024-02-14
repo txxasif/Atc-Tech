@@ -20,7 +20,7 @@ export function CarouselCustomNavigation() {
           }),
         ]}
       >
-        <CarouselContent className="">
+        <CarouselContent className="md:h-[600px] h-[200px] mt-4">
           {data.map((src, idx) => {
             return (
               <CarouselItem
@@ -29,10 +29,10 @@ export function CarouselCustomNavigation() {
               >
                 <Image
                   width={900}
-                  height={500}
+                  height={600}
                   src={src}
                   alt={src}
-                  className="w-full object-cover object-bottom "
+                  className="w-full object-fill object-bottom "
                 />
               </CarouselItem>
             );

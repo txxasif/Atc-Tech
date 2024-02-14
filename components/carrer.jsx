@@ -29,7 +29,7 @@ export function CareerCard({ text, idx }) {
       initial="hidden"
       animate={mainControls}
       transition={{ type: "spring", stiffness: 100 }}
-      className="border border-solid px-4 py-4 rounded-md shadow-sm hover:font-bold hover:text-[17px] border-b hover: text-[#0F79B9] transition-all"
+      className="border font-semibold border-solid px-4 py-4 rounded-md shadow-sm hover:font-bold hover:text-[17px] border-b hover: text-[#0F79B9] transition-all"
     >
       {text}
     </motion.div>

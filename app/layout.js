@@ -12,8 +12,8 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en"  >
+      <body className={`${inter.className} scroll-smooth `}>
         <section>
           <div className="fixed w-full z-10 bg-white ">
             <Navbar />
@@ -24,6 +24,6 @@ export default function RootLayout({ children }) {
           </div>
         </section>
       </body>
-    </html>
+    </html >
   );
 }

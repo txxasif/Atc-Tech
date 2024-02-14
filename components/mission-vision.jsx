@@ -22,13 +22,13 @@ export default function MissionVisionCard() {
       initial="hidden"
       animate={mainControls}
       transition={{ duration: 0.5, delay: 0.25 }}
-      className="grid  grid-cols-1 md:grid-cols-2 py-6 "
+      className="grid  grid-cols-1 lg:grid-cols-2 py-6 "
     >
       {mission_vision.map((item, idx) => {
         return (
-          <div key={idx} className=" px-3 py-4 space-y-3 pl-4  ">
+          <div key={idx} className=" lg:my-16   md:px-3 py-4 space-y-3 lg:pl-4 rounded-lg lg:ml-5 flex flex-col    ">
             <h1 className=" bold-40 text-center ">{item.title}</h1>
-            <p className="text-justify font-light leading-relaxed p-4">
+            <p className="text-justify font-light leading-relaxed lg:p-4">
               {item.description}
             </p>
           </div>
