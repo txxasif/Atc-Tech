@@ -49,14 +49,7 @@ export const features = [
 export const footerLinks = [
   {
     title: "Learn More",
-    links: [
-      "About ATC",
-      "Press Releases",
-      "Environment",
-      "Jobs",
-      "Privacy Policy",
-      "Contact Us",
-    ],
+    links: ["About ATC", "Jobs", "Privacy Policy", "Contact Us"],
   },
 ];
 
