@@ -7,6 +7,7 @@ import {
 } from "@/icons/icons";
 import { motion, useInView } from "framer-motion";
 import { useEffect } from "react";
+import IncrementalNumber from "./mock";
 
 const data = [
   {
@@ -53,9 +54,10 @@ function AchievementCard({ text, count, index }) {
           </span>
         </div>
         <div className="text-center ">
-          <h1 className="font-bold text-4xl text-end lg:text-center">
-            {count}+
-          </h1>
+          <IncrementalNumber
+            className="font-bold text-4xl text-end lg:text-center"
+            n={count}
+          />
           <h1 className="font-light text-end lg:text-center "> {text}</h1>
         </div>
       </div>

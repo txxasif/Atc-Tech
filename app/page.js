@@ -5,6 +5,7 @@ import { Career } from "@/components/carrer";
 import CompanyLogos from "@/components/companies-logos";
 import { Contact } from "@/components/contact";
 import MissionVisionCard from "@/components/mission-vision";
+import Mock from "@/components/mock";
 import { Partnership } from "@/components/partnership";
 import { CeoQuote } from "@/components/quote-ceo";
 import {
@@ -31,9 +32,6 @@ export default function Home() {
       <MissionVisionCard />
       <Career />
       <Achievement />
-
-      {/* <Partnership /> */}
-      {/* <Contact /> */}
     </main>
   );
 }
